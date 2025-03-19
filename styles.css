@@ -24,7 +24,7 @@ body {
 /* Navigation */
 .navbar {
     background-color: var(--white);
-    padding: 0.5rem 5%;
+    padding: 0.3rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,12 +41,21 @@ body {
     color: var(--primary-color);
     display: flex;
     align-items: center;
+    gap: 0.8rem;
 }
 
 .logo-img {
     height: 120px;
-    width: 240px;
+    width: 120px;
     object-fit: contain;
+    display: block;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -436,8 +445,12 @@ body {
     }
 
     .logo-img {
-        height: 90px;
-        width: 180px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .logo-text {
+        font-size: 1.8rem;
     }
 }
 
