@@ -133,11 +133,11 @@
     <section id="contact" class="contact">
         <h2>Get in Touch</h2>
         <div class="contact-container">
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Company Name">
-                <textarea placeholder="Tell us about your needs" required></textarea>
+            <form class="contact-form" action="send_email.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="company" placeholder="Company Name">
+                <textarea name="message" placeholder="Tell us about your needs" required></textarea>
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
             <div class="contact-info">
