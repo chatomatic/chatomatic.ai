@@ -138,6 +138,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 .hero-image img {
@@ -145,6 +147,7 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
 }
 
 /* Services Section */
@@ -231,6 +234,8 @@ body {
 
 .about-image {
     flex: 1;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .about-image img {
@@ -238,6 +243,7 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
 }
 
 /* Contact Section */
@@ -474,7 +480,7 @@ body {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -485,6 +491,8 @@ body {
 .hero-content,
 .service-card,
 .about-content,
-.contact-container {
-    animation: fadeIn 1s ease-out;
+.contact-container,
+.hero-image img,
+.about-image img {
+    animation: fadeIn 1.5s ease-out;
 } 
